@@ -248,7 +248,7 @@ p {
 .banner__heading {
   font-size: 10rem;
   font-weight: 900;
-  margin: 0 20px;
+  margin: 0 30px;
   animation-name: banner-animation;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -256,7 +256,8 @@ p {
 .banner__paragraph {
   font-size: 5rem;
   font-weight: 700;
-  margin-top: 20px;
+  text-align: center;
+  margin: 20px 30px 0 30px;
   animation-name: banner-animation;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -335,7 +336,7 @@ p {
   padding: 90px 0px 50px 0px;
 }
 .gallery__wrapper {
-  padding: 0 20px;
+  padding: 0 25px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 4vw);
@@ -452,6 +453,7 @@ p {
 .input__check-out {
   width: 100%;
   padding: 5px;
+  margin-top: 5px;
   border: 3px solid var(--primaryGreen);
   border-radius: 20px;
 }
@@ -484,7 +486,7 @@ p {
   margin-bottom: 30px;
 }
 .form {
-  max-width: 633px;
+  width: 633px;
   padding: 20px;
   margin: 0 auto 30px auto;
   background-color: var(--secondaryOrange);
@@ -510,6 +512,7 @@ p {
 }
 .text__input {
   font-family: "Roboto", sans-serif;
+  width: 100%;
   font-size: 2rem;
   font-weight: 700;
   color: var(--primaryGreen);
@@ -638,6 +641,13 @@ p {
   text-align: center;
   margin: 50px auto 0 auto;
 }
+/* ############################## MEDIA QUERIES ############################## */
+/* ############################## MEDIA QUERIES FOR UNIVERSAL STYLES ############################## */
+@media screen and (max-width: 1000px) {
+  .page-section {
+    padding: 90px 25px 25px 25px;
+  }
+}
 /* ############################## MEDIA QUERIES FOR HEADER SECTION ############################## */
 @media screen and (max-width: 1000px) {
   .topnav {
@@ -647,5 +657,233 @@ p {
 @media screen and (min-width: 1001px) {
   .menu-wrap {
     display: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .logo__short {
+    display: none;
+  }
+}
+/* ############################## MEDIA QUERIES FOR BANNER SECTION ############################## */
+@media screen and (max-width: 732px) {
+  .banner__heading {
+    font-size: 9rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner__paragraph {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 665px) {
+  .banner__heading {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 598px) {
+  .banner__heading {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 578px) {
+  .banner__paragraph {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 531px) {
+  .banner__heading {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 578px) {
+  .banner__paragraph {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 464px) {
+  .banner__heading {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 423px) {
+  .banner__paragraph {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 397px) {
+  .banner__heading {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 371px) {
+  .banner__paragraph {
+    font-size: 2.5rem;
+  }
+  .banner__btn {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .banner__heading {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 319px) {
+  .banner__paragraph {
+    font-size: 2rem;
+  }
+  .banner__btn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-height: 500px) {
+  .banner {
+    margin-top: 3rem;
+  }
+  .banner__heading {
+    font-size: 3rem;
+    /* margin-top: 2.5rem; */
+  }
+  .banner__paragraph {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  .banner__btn {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+}
+/* ############################## MEDIA QUERIES FOR ABOUT US SECTION ############################## */
+@media screen and (max-width: 600px) {
+  .about-us__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+/* ############################## MEDIA QUERIES FOR GALLERY SECTION ############################## */
+@media screen and (max-width: 1000px) {
+  .gallery {
+    padding-bottom: 25px;
+  }
+}
+/* ############################## MEDIA QUERIES FOR BOOKING SECTION ############################## */
+@media screen and (max-width: 620px) {
+  .booking__form--wrapper {
+    display: block;
+  }
+  .label__check-in,
+  .label__check-out,
+  .label__adults,
+  .label__children,
+  .label__rooms {
+    display: block;
+    text-align: center;
+  }
+  .booking__input {
+    margin: 5px auto;
+  }
+  .input__check-in,
+  .input__check-out {
+    display: block;
+    width: 50%;
+  }
+  .input__adults,
+  .input__children,
+  .input__rooms {
+    display: block;
+    width: 50%;
+  }
+  .room-type {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .input__room-type,
+  .label__room-type {
+    margin: 10px 0;
+  }
+  .form__btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .input__check-in,
+  .input__check-out {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .form__message {
+    font-size: 2rem;
+  }
+}
+/* ############################## MEDIA QUERIES FOR CONTACT US SECTION ############################## */
+@media screen and (max-width: 800px) {
+  .form {
+    width: 100%;
+  }
+  .form__inputs {
+    display: grid;
+    grid-template-areas:
+      "name"
+      "email"
+      "message";
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .social__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .social__item--link {
+    width: 80px;
+    height: 80px;
+  }
+  .social__item--icon {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .social__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ############################## MEDIA QUERIES FOR FOOTER SECTION ############################## */
+@media screen and (max-width: 1120px) {
+  .footer__nav--items {
+    grid-template-columns: 1fr;
+  }
+}
+/* ############################## MEDIA QUERIES FOR HOVER ############################## */
+@media screen and (max-width: 1024px) {
+  .banner__btn:hover {
+    color: var(--primaryOrange);
+    background-color: transparent;
+    border: 5px solid var(--primaryOrange);
+    transform: scale(1);
+  }
+  .about-us__photo:hover {
+    transform: scale(1);
+  }
+  .gallery__img:hover {
+    transform: scale(1);
+  }
+  .form__btn:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  .social__item--link:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  .footer__nav--link:hover {
+    color: var(--primaryGreen);
+    background-color: transparent;
   }
 }
