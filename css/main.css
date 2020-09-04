@@ -848,6 +848,12 @@ p {
     font-size: 4rem;
   }
 }
+@media screen and (max-width: 350px) {
+  .text__input,
+  .form__btn {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 300px) {
   .social__items {
     grid-template-columns: repeat(2, 1fr);
