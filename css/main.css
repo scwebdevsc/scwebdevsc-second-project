@@ -460,7 +460,7 @@ p {
 .input__adults,
 .input__children,
 .input__rooms {
-  width: 50px;
+  width: 75px;
   padding: 5px;
   border: 3px solid var(--primaryGreen);
   border-radius: 20px;
@@ -739,11 +739,11 @@ p {
 }
 @media screen and (max-height: 500px) {
   .banner {
-    margin-top: 3rem;
+    justify-content: start;
   }
   .banner__heading {
     font-size: 3rem;
-    /* margin-top: 2.5rem; */
+    margin-top: 10rem;
   }
   .banner__paragraph {
     font-size: 2rem;
@@ -791,7 +791,7 @@ p {
   .input__children,
   .input__rooms {
     display: block;
-    width: 50%;
+    width: 100px;
   }
   .room-type {
     display: block;
@@ -809,7 +809,7 @@ p {
 @media screen and (max-width: 500px) {
   .input__check-in,
   .input__check-out {
-    width: 100%;
+    width: 80%;
   }
 }
 
