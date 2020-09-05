@@ -737,13 +737,13 @@ p {
     font-size: 2rem;
   }
 }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 450px) {
   .banner {
     justify-content: start;
   }
   .banner__heading {
     font-size: 3rem;
-    margin-top: 10rem;
+    margin-top: 9rem;
   }
   .banner__paragraph {
     font-size: 2rem;
@@ -754,7 +754,7 @@ p {
     margin-top: 5px;
   }
   .menu-wrap .menu > div > div > ul > li {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /* ############################## MEDIA QUERIES FOR ABOUT US SECTION ############################## */
