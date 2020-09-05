@@ -753,6 +753,9 @@ p {
     font-size: 2rem;
     margin-top: 5px;
   }
+  .menu-wrap .menu > div > div > ul > li {
+    font-size: 2.5rem;
+  }
 }
 /* ############################## MEDIA QUERIES FOR ABOUT US SECTION ############################## */
 @media screen and (max-width: 600px) {
